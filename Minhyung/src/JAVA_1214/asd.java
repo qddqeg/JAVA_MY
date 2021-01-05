@@ -1,0 +1,113 @@
+package JAVA_1214;
+
+import java.util.Scanner;
+public class asd {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Turn (1. On/2. Off)");
+		int turn = sc.nextInt();
+		int channel = 0;
+		int vol=0;
+		String youtube ="";
+		boolean run=true;
+		switch(turn) {
+		case 1: 
+			System.out.println("📺");			
+				System.out.println("1. Channel Select   2. Vol control   3.YOUTUBE");
+				int function = sc.nextInt();
+				while(run) {
+					switch(function) {
+					case 1:
+						channel = Channel_select(channel);
+						System.out.println("현재 채널: "+channel);	
+						break;
+						
+					case 2: 
+						vol=vol_1(vol);
+						System.out.println("현재 음량: "+vol);
+						break;
+						
+					case 3:
+						youtube= youtube_1(youtube);
+						System.out.println("검색하신 유튜브 채널은 : "+youtube+"입니다.");
+						
+					}		
+				
+				
+				}
+		case 2:
+			System.out.println("TV 전원을 끕니다.");
+	
+		}	
+	}
+	public static int Channel_select(int channel) {
+		Scanner sc = new Scanner (System.in);
+		System.out.println("일을 옮겨받았습니다.");
+		System.out.println("1 : up  2 : down  3 : Input Channel number");
+		int function = sc.nextInt();
+		switch(function) {
+		case 1: 
+			channel = channel+1;
+			if(channel>100) {
+				channel=1;
+			}
+			break;
+		case 2: 
+			channel = channel-1;
+			if(channel<0) {
+				channel=100;
+			}
+			break;
+		case 3: 
+			System.out.println("Input Channel number");
+			channel = sc.nextInt();
+			break;
+		}
+		System.out.println("만들어낸 채널값을 위로 올려보냅니다.");
+		return channel;
+	}
+	public static int vol_1(int vol) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("1 : up  2 : down  3 : 음소거");
+		int pick=sc.nextInt();
+		switch(pick) {
+		case 1:
+			vol=vol+1;
+			if(vol>40) {
+				vol=40;
+				System.out.println("소리 최대 더이상 올릴수 없습니다.");
+			}
+			break;
+		case 2:
+			vol=vol-1;
+			if(vol<0) {
+				vol=0;
+				System.out.println("소리 최소 더이상 내릴수 없습니다.");
+			}
+			
+			break;
+		case 3:
+			vol=0;
+			break;
+		}
+		
+		return vol;
+			
+	}
+	public static String youtube_1(String youtube) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("시청하실 유튜브를 검색해주세요.");
+		youtube=sc.next();
+		switch(youtube) {
+		case("백종원"):
+			System.out.println("백종원의 요리비책 유튜브를 시청합니다.");
+		break;
+		default :
+			System.out.println("잘못 입력하셨습니다.");
+			break;
+		}
+     return youtube;
+	}
+	
+}

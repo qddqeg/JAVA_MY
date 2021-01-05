@@ -1,0 +1,28 @@
+package JAVA_1230;
+
+import java.util.Scanner;
+
+public class animal_main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		boolean bo = true;
+
+		System.out.println("====================================");
+		System.out.println("동물 울음소리 맞추기 ");
+		while (bo) {
+			System.out.println("====================================");
+			System.out.println("음성을 듣고 동물을 맞춰보세요 ");
+			
+			animal ani = new animal();
+			ani.animal_rd();
+			
+			
+			
+				
+			
+		}
+
+	}
+
+}

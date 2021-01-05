@@ -1,0 +1,17 @@
+package JAVA_1231;
+
+public class ClassB {
+private String A;
+private String B;
+public String getA() {
+	return A;
+}
+
+public ClassB(String a, String b) {
+	super();
+	A = a;
+	B = b;
+}
+
+
+}

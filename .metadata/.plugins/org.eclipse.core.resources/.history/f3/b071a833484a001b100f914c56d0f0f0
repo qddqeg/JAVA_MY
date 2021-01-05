@@ -1,0 +1,32 @@
+package JAVA_1230;
+
+abstract interface Car_color  {
+static String col_1="blue";
+static String col_2="yellow";
+static String col_3="Red";
+static String col_4="black";
+static String col_5="White";
+
+
+public static void ran_color() {
+	int ran=(int)(Math.random()*5)+1;
+	switch(ran) {
+	case 1:
+		System.out.println("색상은 "+col_1+" 입니다.");
+		break;
+	case 2:
+		System.out.println("색상은 "+col_2+" 입니다.");
+		break;
+	case 3:
+		System.out.println("색상은 "+col_3+" 입니다.");
+		break;
+	case 4:
+		System.out.println("색상은 "+col_4+" 입니다.");
+		break;
+	case 5:
+		System.out.println("색상은 "+col_5+" 입니다.");
+		break;
+	
+	}
+}
+}

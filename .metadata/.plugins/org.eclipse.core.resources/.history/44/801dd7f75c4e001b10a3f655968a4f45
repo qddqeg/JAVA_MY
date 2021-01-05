@@ -1,0 +1,10 @@
+package JAVA_0104;
+
+public class Str_A_main {
+
+	public static void main(String[] args) {
+		Str_C c=new Str_C();
+		c.Str_C();
+	}
+
+}

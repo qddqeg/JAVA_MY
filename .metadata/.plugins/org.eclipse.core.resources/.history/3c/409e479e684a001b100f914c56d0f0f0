@@ -1,0 +1,42 @@
+package JAVA_1230;
+import java.util.Random;
+import java.util.Scanner;
+public class animal{
+	int life;
+ Random rd= new Random();
+ Scanner sc = new Scanner(System.in);
+public void animal_rd() {
+	String str;
+	int rdm=rd.nextInt(5)+1;
+	switch(rdm) {
+	case 1: 
+		System.out.println("|¸Û ¸Û|");
+		System.out.println("µ¿¹°À» ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+		str=sc.nextLine();
+		if(str.equals("°­¾ÆÁö")) {
+			System.out.println("Á¤´äÀÔ´Ï´Ù.!!");
+			life++;
+			System.out.println(life);
+		}else {
+			System.out.println("Æ²·È½À´Ï´Ù.¤Ð¤Ð");
+			life--;
+			System.out.println(life);
+		}
+		break;
+	case 2: 
+		System.out.println("|¾ß¿Ë ¾ß¿Ë|");
+		break;
+	case 3: 
+		System.out.println("|»ß¾à »ß¾à|");
+		break;
+	case 4: 
+		System.out.println("|À½¸Þ~|");
+		break;
+	case 5: 
+		System.out.println("|²Ü ²Ü|");
+		break;
+	}
+	
+	
+}
+}

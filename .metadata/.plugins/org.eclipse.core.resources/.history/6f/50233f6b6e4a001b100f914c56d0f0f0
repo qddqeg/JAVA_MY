@@ -1,0 +1,50 @@
+package 시험;
+
+import java.util.Scanner;
+
+public class Coding_4 {
+
+
+
+	static int volume = 0;
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		boolean run = true;
+		int pick;
+		int channel = 0;
+		
+		Coding_4_TV tv=new Coding_4_TV();
+		
+		while (run) {
+			System.out.println("| 1.채널선택 | 2.볼륨조절 | 3. TV 끄고 켜기 |");
+			pick = sc.nextInt();
+			switch (pick) {
+			case 1:
+				tv.CHANNEL(pick, channel);
+				break;
+
+			case 2:
+				tv.VOLUME(volume);
+			
+				break;
+
+			case 3:
+				System.out.println("|1. 전원 on | 2. 전원 off |");
+				pick = sc.nextInt();
+				switch(pick) {
+				case 1:System.out.println("TV가 켜졌습니다.");
+				break;
+				
+				case 2:System.out.println("TV가 꺼졌습니다.");
+				run=false;
+				break;
+				}
+				break;
+			}
+
+		}
+
+	}
+
+
+}

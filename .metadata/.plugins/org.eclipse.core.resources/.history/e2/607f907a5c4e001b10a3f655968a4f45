@@ -1,0 +1,13 @@
+package JAVA_0104;
+
+import java.util.Scanner;
+
+public class Str_C {
+Str_B B=new Str_B();
+Scanner sc=new Scanner(System.in);
+public void Str_C(){
+	B.str=sc.next();
+	B.c='A';
+
+}
+}

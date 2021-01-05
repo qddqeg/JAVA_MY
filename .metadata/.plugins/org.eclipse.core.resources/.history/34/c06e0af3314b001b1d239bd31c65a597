@@ -1,0 +1,17 @@
+package JAVA_1231;
+
+public class ClassC extends ClassB {
+
+public ClassC(String a, String b) {
+	super(a, b);
+	
+	
+}
+public void show() {
+	System.out.println("안녕하세요 C클래스에서 만들어진 A입니다."+getA());
+	System.out.println("안녕하세요 C클래스에서 만들어진 B입니다."+getB());
+}
+
+	
+
+}

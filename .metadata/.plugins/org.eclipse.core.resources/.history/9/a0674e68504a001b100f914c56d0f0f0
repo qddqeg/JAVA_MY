@@ -1,0 +1,10 @@
+package JAVA_1230;
+import java.util.Random;
+public class animal{
+	Random rd= new Random();
+	
+public void animal_rd() {
+	int rd_1=rd.nextInt(5)+1;
+	System.out.println(rd_1);
+}
+}

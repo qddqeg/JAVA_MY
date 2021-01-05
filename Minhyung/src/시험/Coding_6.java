@@ -1,0 +1,25 @@
+package ½ÃÇè;
+
+public class Coding_6 {
+
+	public static void main(String[] args) {
+		String str="9B768C";
+		int result=0;
+		char c='0';
+		String arry[]=new String[str.length()];
+		for(int i=0;i<str.length();i++) {
+			arry[i]=str.substring(i,i+1);
+			c=str.charAt(i);
+			System.out.println(c);
+			result+=c;
+			System.out.println(result);
+		}
+
+		
+		
+	}
+
+	
+	
+
+}

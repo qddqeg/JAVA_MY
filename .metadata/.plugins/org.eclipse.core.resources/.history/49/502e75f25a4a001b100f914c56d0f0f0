@@ -1,0 +1,59 @@
+package JAVA_1230;
+
+import java.util.Scanner;
+import java.util.Random;
+public class animal_main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		 Random rd= new Random();
+		boolean bo = true;
+		int life=0;
+
+		System.out.println("====================================");
+		System.out.println("동물 울음소리 맞추기 ");
+		while (bo) {
+			System.out.println("====================================");
+			System.out.println("음성을 듣고 동물을 맞춰보세요 ");
+			
+			String str;
+			int rdm=rd.nextInt(5)+1;
+			switch(rdm) {
+			case 1: 
+				System.out.println("|멍 멍|");
+				System.out.println("동물을 입력해주세요.");
+				str=sc.nextLine();
+				if(str.equals("강아지")) {
+					System.out.println("정답입니다.!!");
+					life++;
+					System.out.println(life);
+				}else {
+					System.out.println("틀렸습니다.ㅠㅠ");
+					life--;
+					System.out.println(life);
+				}
+				break;
+			case 2: 
+				System.out.println("|야옹 야옹|");
+				break;
+			case 3: 
+				System.out.println("|삐약 삐약|");
+				break;
+			case 4: 
+				System.out.println("|음메~|");
+				break;
+			case 5: 
+				System.out.println("|꿀 꿀|");
+				break;
+			}
+			
+			
+			
+			
+				
+			
+		}
+
+	}
+
+}

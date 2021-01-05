@@ -1,0 +1,11 @@
+package JAVA_1231;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+       ClassB b= new ClassB();
+       b.setA("asd");
+       System.out.println(b.getA());
+	}
+}

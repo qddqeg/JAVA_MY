@@ -1,0 +1,8 @@
+package JAVA_0104;
+
+public class Number {
+int num_1;
+int num_2;
+int num_3;
+int num_4;
+}

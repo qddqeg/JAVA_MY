@@ -1,0 +1,19 @@
+package JAVA_1214;
+import java.util.Scanner;
+public class part_4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner sc = new Scanner(System.in);
+        System.out.println("문자를 입력하세요.");
+        String str= sc.next();
+      
+        boolean bo=string_boo(str);
+        System.out.println(bo);
+	}
+  public static boolean string_boo(String str) {
+	 
+	  boolean bo=str.contains("!");
+       return bo;
+  }
+}

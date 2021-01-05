@@ -1,0 +1,10 @@
+package JAVA_0105;
+
+public class My_phone {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,43 @@
+package JAVA_1214;
+import java.util.Scanner;
+public class part_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int i =10;
+       int result=a(i);
+       System.out.println(result);
+       int j= 20;
+       result=b(j);
+       System.out.println(result);
+       
+       int k= 30;
+       result=c(k);
+       System.out.println(result);
+       int m= 40;
+       result=d(m);
+       System.out.println(result);
+       
+    		 
+	}
+  public static int a(int i) {
+	  int result=i/2;
+	  
+	  return result;
+  }
+  public static int b(int j) {
+	  int result=j/2;
+	  
+	  return result;
+  }
+  public static int c(int k) {
+	  int result=k/2;
+	  
+	  return result;
+  }
+  public static int d(int m) {
+	  int result=m/2;
+	  
+	  return result;
+  }
+}

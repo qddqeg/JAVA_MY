@@ -1,0 +1,51 @@
+package JAVA_0105;
+
+import java.util.Scanner;
+
+public class Phone_book {
+Book[]book_array;
+int current;
+static Scanner sc=new Scanner(System.in);
+
+public void Phone_book() {
+	book_array = new Book[3];
+    current = 0;
+}
+
+public static void Enrollment(Phone_book pb) {
+	Book bk=new Book();
+	System.out.println("=========================================");
+	System.out.println("|               등록을 합니다               |");
+	System.out.println("=========================================");
+	System.out.println();
+	
+	System.out.println(pb.current+1+". 이름 : ");
+	bk.setName(sc.next());
+	System.out.println(pb.current+1+". 전화번호 : ");
+	bk.setNumber(sc.next());
+	System.out.println(pb.current+1+". 관계 : ");
+	bk.setRelation(sc.next());
+	System.out.println("----------------------------------");
+	
+	pb.book_array[pb.current]=bk;
+	System.out.println(bk);
+	pb.current++;
+
+}
+
+public static void Example(Phone_book pb) {
+	System.out.println("=========================================");
+	System.out.println("|              전화번호부 보기              |");
+	System.out.println("=========================================");
+	
+	for(int i=0;i<pb.current; i++) {
+		Book bk=pb.book_array[i];
+		System.out.println(pb.current+1+". 이름 : "+bk.getName());
+		System.out.println(pb.current+1+". 전화번호 : "+bk.getNumber());
+		System.out.println(pb.current+1+". 관계 : "+bk.getRelation());
+		System.out.println("--------------------------------------------");
+		
+	}
+
+}
+}

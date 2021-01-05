@@ -1,0 +1,14 @@
+package JAVA_1229;
+import java.util.Scanner;
+public class USER_Main {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		USER user=new USER();
+		System.out.println("ID를 입력해 주세요.");
+		String input=sc.nextLine();
+		user.getID();
+
+	}
+
+}

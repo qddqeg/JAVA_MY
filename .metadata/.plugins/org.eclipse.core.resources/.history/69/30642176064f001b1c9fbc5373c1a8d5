@@ -1,0 +1,7 @@
+package JAVA_0105;
+
+public class Book {
+private String name;
+private String number;
+private String mail;
+}

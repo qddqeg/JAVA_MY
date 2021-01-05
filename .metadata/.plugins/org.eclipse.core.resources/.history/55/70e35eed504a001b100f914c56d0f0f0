@@ -1,0 +1,14 @@
+package JAVA_1230;
+import java.util.Scanner;
+
+
+public class animal_main {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		animal ani= new animal();
+		ani.animal_rd();
+
+	}
+
+}

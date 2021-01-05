@@ -1,0 +1,33 @@
+package 시험;
+import java.util.Scanner;
+public class Coding_4 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		boolean run=true;
+        int channel=0;
+        int volume=0;
+		while(run) {
+			System.out.println("| 1.채널선택 | 2.볼륨조절 | 3. TV 끄고 켜기 |");
+			int pick=sc.nextInt();
+			switch(pick) {
+			case 1:System.out.println("시청하실 채널을 입력해주세요.");
+			 pick=sc.nextInt();
+			 channel=pick;
+			 System.out.println(channel+" 채널로 이동되었습니다.");
+			 break;
+			 
+			case 2:System.out.println(" |+|-|로 볼륨을 조절합니다.");
+			String vol_up_down=sc.next();
+			if(vol_up_down.equals("+")) {
+				volume++;
+				System.out.println("볼륨이 올라갔습니다. 현재 볼륨은 : "+volume+" 입니다.");
+			}
+			}
+			
+		}
+		
+
+	}
+
+}

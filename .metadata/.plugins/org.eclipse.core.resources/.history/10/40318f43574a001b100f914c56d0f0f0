@@ -1,0 +1,26 @@
+package JAVA_1230;
+import java.util.Random;
+public class animal{
+	Random rd= new Random();
+	
+public void animal_rd() {
+	int rdm=rd.nextInt(5)+1;
+	switch(rdm) {
+	case 1: 
+		System.out.println("|港 港|");
+		break;
+	case 2: 
+		System.out.println("|具克 具克|");
+		break;
+	case 3: 
+		System.out.println("|贿距 贿距|");
+		break;
+	case 4: 
+		System.out.println("|澜皋~|");
+		break;
+	case 5: 
+		System.out.println("|曹 曹|");
+		break;
+	}
+}
+}

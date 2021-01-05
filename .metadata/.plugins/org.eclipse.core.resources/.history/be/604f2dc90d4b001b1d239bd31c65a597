@@ -1,0 +1,12 @@
+package ½ÃÇè;
+
+public class Call {
+
+	public void Pick() {
+		SmartPhone sp=new SmartPhone();
+		Phone_book pb=new Phone_book();
+		pb.List();
+		sp.SCANNER();
+		
+	}
+}

@@ -1,0 +1,64 @@
+package 시험;
+
+import java.util.Scanner;
+
+public class Coding_4 {
+
+static Scanner sc = new Scanner(System.in);
+static int volume = 0;
+
+	public static void main(String[] args) {
+		
+		boolean run = true;
+		int pick;
+		int channel = 0;
+		
+		Coding_4_TV tv=new Coding_4_TV();
+		
+		while (run) {
+			System.out.println("| 1.채널선택 | 2.볼륨조절 | 3. TV 끄고 켜기 |");
+			pick = sc.nextInt();
+			switch (pick) {
+			case 1:
+				tv.CHANNEL(pick, channel);
+				break;
+
+			case 2:
+				VOLUME();
+			
+				break;
+
+			case 3:
+				System.out.println("|1. 전원 on | 2. 전원 off |");
+				pick = sc.nextInt();
+				switch(pick) {
+				case 1:System.out.println("TV가 켜졌습니다.");
+				break;
+				
+				case 2:System.out.println("TV가 꺼졌습니다.");
+				run=false;
+				break;
+				}
+				break;
+			}
+
+		}
+
+	}
+
+public static void  VOLUME() {
+	System.out.println(" |+|-|로 볼륨을 조절합니다.");
+	String vol_up_down = sc.next();
+	if (vol_up_down.equals("+")) {
+		volume++;
+		System.out.println("볼륨이 올라갔습니다. 현재 볼륨은 : " + volume + " 입니다.");
+	} else if (vol_up_down.equals("-")) {
+		if (volume == 0) {
+			System.out.println("현재 음소거 입니다. 더이상 소리를 낮출수 없습니다.");
+		} else {
+			volume--;
+			System.out.println("볼륨이 내려갔습니다. 현재 볼륨은 : " + volume + " 입니다.");
+		}
+	}
+}
+}
